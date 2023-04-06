@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Draw Route</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
   <header class="header">
@@ -19,11 +21,16 @@
               Главная
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              О&nbsp;сервисе
-            </a>
-            <ul class="menu__submenu">
+          <li class="menu__item menu__item_show">
+            <div class="menu__show flex" href="#">
+              <span class="menu__link menu__link_show">
+                О&nbsp;сервисе
+              </span>
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="#E85A4F" stroke-width="2"/>
+              </svg>
+            </div>
+            <ul class="menu__submenu list-reset flex">
               <li class="submenu__item">
                 <a class="submenu__link" href="#">
                   Инструкция
@@ -46,11 +53,16 @@
               Блог
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              О&nbsp;нас
-            </a>
-            <ul class="menu__submenu">
+          <li class="menu__item menu__item_show">
+            <div class="menu__show flex" href="#">
+              <span class="menu__link menu__link_show">
+                О&nbsp;нас
+              </span>
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="#E85A4F" stroke-width="2"/>
+              </svg>
+            </div>
+            <ul class="menu__submenu list-reset flex">
               <li class="submenu__item">
                 <a class="submenu__link" href="#">
                   команда
@@ -74,137 +86,135 @@
   </header>
 
   <main class="main">
-    <section class="hero">
-      <div class="container">
-        <div class="container hero__container flex">
-          <div class="hero__left flex">
-            <h1 class="hero__title">
-              Draw Route
-            </h1>
-            <p class="hero__descr">
-              это уникальный сервис, который позволяет пользователям строить маршруты на&nbsp;карте в&nbsp;виде любой фигуры или формы, которую они могут нарисовать. С&nbsp;помощью нашего сервиса вы&nbsp;можете создавать индивидуальные маршруты для прогулок, тренировок или любых других целей.
-            </p>
-            <a class="hero__link" href="#course">
-              Начать
-            </a>
-          </div>
-          <div class="hero__right">
-            <svg class="hero__img" width="316" height="277" viewBox="0 0 316 277" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M158 59.5828C124.667 -17.1867 8 -9.01007 8 89.1104C8 187.23 158 269 158 269C158 269 308 187.23 308 89.1104C308 -9.01007 191.333 -17.1867 158 59.5828Z" fill="#EAE7DC" stroke="#E85A4F" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+    <section class="hero section-offset">
+      <div class="container hero__container flex">
+        <div class="hero__left flex">
+          <h1 class="hero__title">
+            Draw Route
+          </h1>
+          <p class="hero__descr">
+            это уникальный сервис, который позволяет пользователям строить маршруты на&nbsp;карте в&nbsp;виде любой фигуры или формы, которую они могут нарисовать. С&nbsp;помощью нашего сервиса вы&nbsp;можете создавать индивидуальные маршруты для прогулок, тренировок или любых других целей.
+          </p>
+          <a class="hero__link" href="#course">
+            Начать
+          </a>
+        </div>
+        <div class="hero__right">
+          <svg class="hero__img" width="316" height="277" viewBox="0 0 316 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M158 59.5828C124.667 -17.1867 8 -9.01007 8 89.1104C8 187.23 158 269 158 269C158 269 308 187.23 308 89.1104C308 -9.01007 191.333 -17.1867 158 59.5828Z" fill="#EAE7DC" stroke="#E85A4F" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about section-offset">
       <div class="container">
         <h2 class="section-title about__title">
           Как это работает?
         </h2>
-        <ul class="about__list">
-          <li class="about__item about__item_first">
-            <div class="about__road">
-              <svg class="about__img" width="178" height="105" viewBox="0 0 178 105" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C7.99999 112.5 170 27 170 97" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+        <ul class="about__list list-reset flex">
+          <li class="about__item about__item_first flex">
+            <svg class="about__img_first" width="178" height="105" viewBox="0 0 178 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C7.99999 112.5 170 27 170 97" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 Зарегистрируйтесь или авторизуйтесь
               </h3>
+              <p class="about__text">
+                Зарегистрируйтесь на&nbsp;сайте Draw Route, введя свой электронный адрес и&nbsp;пароль.
+              </p>
             </div>
-            <p class="about__text">
-              Зарегистрируйтесь на&nbsp;сайте Draw Route, введя свой электронный адрес и&nbsp;пароль.
-            </p>
           </li>
-          <li class="about__item">
-            <div class="about__road">
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+          <li class="about__item flex">
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 Начинайте рисовать!
               </h3>
+              <p class="about__text">
+                В&nbsp;разделе построить маршрут имеется холст для рисования
+              </p>
             </div>
-            <p class="about__text">
-              В&nbsp;разделе построить маршрут имеется холст для рисования
-            </p>
           </li>
-          <li class="about__item">
-            <div class="about__road">
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+          <li class="about__item flex">
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 шаг&nbsp;1
               </h3>
+              <p class="about__text">
+                Загрузите изображение фигуры, которую вы&nbsp;хотите использовать в&nbsp;качестве маршрута. Формат изображения должен быть одним из&nbsp;следующих: PNG, JPG, SVG.
+              </p>
             </div>
-            <p class="about__text">
-              Загрузите изображение фигуры, которую вы&nbsp;хотите использовать в&nbsp;качестве маршрута. Формат изображения должен быть одним из&nbsp;следующих: PNG, JPG, SVG.
-            </p>
           </li>
-          <li class="about__item">
-            <div class="about__road">
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+          <li class="about__item flex">
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 шаг&nbsp;2
               </h3>
+              <p class="about__text">
+                Выберите город, в&nbsp;котором вы&nbsp;хотите построить маршрут. Укажите начальную и&nbsp;конечную точки маршрута, а&nbsp;также добавьте промежуточные точки, если это необходимо.
+              </p>
             </div>
-            <p class="about__text">
-              Выберите город, в&nbsp;котором вы&nbsp;хотите построить маршрут. Укажите начальную и&nbsp;конечную точки маршрута, а&nbsp;также добавьте промежуточные точки, если это необходимо.
-            </p>
           </li>
-          <li class="about__item">
-            <div class="about__road">
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+          <li class="about__item flex">
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 шаг&nbsp;3
               </h3>
+              <p class="about__text">
+                Нажмите на&nbsp;кнопку &laquo;Построить маршрут&raquo;, чтобы получить карту маршрута в&nbsp;виде выбранной вами фигуры.
+              </p>
             </div>
-            <p class="about__text">
-              Нажмите на&nbsp;кнопку &laquo;Построить маршрут&raquo;, чтобы получить карту маршрута в&nbsp;виде выбранной вами фигуры.
-            </p>
           </li>
-          <li class="about__item">
-            <div class="about__road">
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+          <li class="about__item flex">
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 сохранение
               </h3>
+              <p class="about__text">
+                Если вы&nbsp;хотите пройти маршрут в&nbsp;реальной жизни, то&nbsp;скачайте карту маршрута в&nbsp;формате PDF или распечатайте ее&nbsp;на&nbsp;принтере.
+              </p>
             </div>
-            <p class="about__text">
-              Если вы&nbsp;хотите пройти маршрут в&nbsp;реальной жизни, то&nbsp;скачайте карту маршрута в&nbsp;формате PDF или распечатайте ее&nbsp;на&nbsp;принтере.
-            </p>
           </li>
-          <li class="about__item about__item_last">
-            <div class="about__road">
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
+          <li class="about__item about__item_last flex">
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <div class="about__block flex">
               <h3 class="about__subtitle">
                 поделитесь результатом
               </h3>
-              <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
-              </svg>
-              <svg class="about__img" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M89.7969 13.4795C92.3631 12.6242 95.1369 12.6242 97.7031 13.4795L128.953 23.8961C134.057 25.5976 137.5 30.3743 137.5 35.7546V122.579C137.5 131.111 129.141 137.135 121.047 134.437L93.75 125.338L60.2029 136.521C57.637 137.376 54.863 137.376 52.2971 136.521L21.0471 126.104C15.9429 124.403 12.5 119.626 12.5 114.245V27.4213C12.5 18.8894 20.8587 12.8648 28.9529 15.5628L56.25 24.6618L89.7969 13.4795ZM93.75 25.338L60.2029 36.5204C57.637 37.3756 54.863 37.3756 52.2971 36.5204L25 27.4213V114.245L56.25 124.662L89.7969 113.479C92.3631 112.624 95.1369 112.624 97.7031 113.479L125 122.579V35.7546L93.75 25.338ZM83.0806 51.8305C85.5212 49.3897 89.4787 49.3897 91.9194 51.8305L96.875 56.7861L101.831 51.8305C104.271 49.3897 108.229 49.3897 110.669 51.8305C113.11 54.2713 113.11 58.2286 110.669 60.6693L105.714 65.625L110.669 70.5806C113.11 73.0213 113.11 76.9788 110.669 79.4194C108.229 81.86 104.271 81.86 101.831 79.4194L96.875 74.4638L91.9194 79.4194C89.4787 81.86 85.5212 81.86 83.0806 79.4194C80.64 76.9788 80.64 73.0213 83.0806 70.5806L88.0362 65.625L83.0806 60.6693C80.64 58.2286 80.64 54.2713 83.0806 51.8305ZM37.5 100C40.9517 100 43.75 97.2019 43.75 93.75C43.75 90.2981 40.9517 87.5 37.5 87.5C34.0482 87.5 31.25 90.2981 31.25 93.75C31.25 97.2019 34.0482 100 37.5 100ZM56.25 75C56.25 78.4519 53.4517 81.25 50 81.25C46.5482 81.25 43.75 78.4519 43.75 75C43.75 71.5481 46.5482 68.75 50 68.75C53.4517 68.75 56.25 71.5481 56.25 75ZM68.75 75C72.2019 75 75 72.2019 75 68.75C75 65.2981 72.2019 62.4999 68.75 62.4999C65.2981 62.4999 62.5 65.2981 62.5 68.75C62.5 72.2019 65.2981 75 68.75 75Z" fill="#C9C1B2"/>
-              </svg>
+              <p class="about__text">
+                Следуйте по&nbsp;построенному маршруту, наслаждаясь красивыми видами и&nbsp;ощущением полезного прогулки. Не&nbsp;забудьте поделиться прекрасной прогулкой с&nbsp;другими!
+              </p>
             </div>
-            <p class="about__text">
-              Следуйте по&nbsp;построенному маршруту, наслаждаясь красивыми видами и&nbsp;ощущением полезного прогулки. Не&nbsp;забудьте поделиться прекрасной прогулкой с&nbsp;другими!
-            </p>
+            <svg class="about__img" width="16" height="66" viewBox="0 0 16 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8C8 48 8 18 8 58" stroke="#E85A4F" stroke-width="15" stroke-linecap="square"/>
+            </svg>
+            <svg class="about__img" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M89.7969 13.4795C92.3631 12.6242 95.1369 12.6242 97.7031 13.4795L128.953 23.8961C134.057 25.5976 137.5 30.3743 137.5 35.7546V122.579C137.5 131.111 129.141 137.135 121.047 134.437L93.75 125.338L60.2029 136.521C57.637 137.376 54.863 137.376 52.2971 136.521L21.0471 126.104C15.9429 124.403 12.5 119.626 12.5 114.245V27.4213C12.5 18.8894 20.8587 12.8648 28.9529 15.5628L56.25 24.6618L89.7969 13.4795ZM93.75 25.338L60.2029 36.5204C57.637 37.3756 54.863 37.3756 52.2971 36.5204L25 27.4213V114.245L56.25 124.662L89.7969 113.479C92.3631 112.624 95.1369 112.624 97.7031 113.479L125 122.579V35.7546L93.75 25.338ZM83.0806 51.8305C85.5212 49.3897 89.4787 49.3897 91.9194 51.8305L96.875 56.7861L101.831 51.8305C104.271 49.3897 108.229 49.3897 110.669 51.8305C113.11 54.2713 113.11 58.2286 110.669 60.6693L105.714 65.625L110.669 70.5806C113.11 73.0213 113.11 76.9788 110.669 79.4194C108.229 81.86 104.271 81.86 101.831 79.4194L96.875 74.4638L91.9194 79.4194C89.4787 81.86 85.5212 81.86 83.0806 79.4194C80.64 76.9788 80.64 73.0213 83.0806 70.5806L88.0362 65.625L83.0806 60.6693C80.64 58.2286 80.64 54.2713 83.0806 51.8305ZM37.5 100C40.9517 100 43.75 97.2019 43.75 93.75C43.75 90.2981 40.9517 87.5 37.5 87.5C34.0482 87.5 31.25 90.2981 31.25 93.75C31.25 97.2019 34.0482 100 37.5 100ZM56.25 75C56.25 78.4519 53.4517 81.25 50 81.25C46.5482 81.25 43.75 78.4519 43.75 75C43.75 71.5481 46.5482 68.75 50 68.75C53.4517 68.75 56.25 71.5481 56.25 75ZM68.75 75C72.2019 75 75 72.2019 75 68.75C75 65.2981 72.2019 62.4999 68.75 62.4999C65.2981 62.4999 62.5 65.2981 62.5 68.75C62.5 72.2019 65.2981 75 68.75 75Z" fill="#C9C1B2"/>
+            </svg>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages section-offset">
       <div class="container">
         <h2 class="section-title advantages__title">
           Как это работает?
@@ -285,7 +295,7 @@
       </div>
     </section>
 
-    <section class="updates">
+    <section class="updates section-offset">
       <div class="container">
         <h2 class="section-title updates__title">
           Последние обновления
@@ -334,7 +344,7 @@
       </div>
     </section>
 
-    <section class="join-us">
+    <section class="join-us section-offset">
       <div class="container">
         <h2 class="section-title join-us__title">
           Присоединяйтесь к&nbsp;нам и&nbsp;начинайте рисовать свой путь!
