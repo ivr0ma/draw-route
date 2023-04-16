@@ -385,3 +385,22 @@ body {
 .sign-up__form .form__btn {
   margin-bottom: 0;
 }
+
+/* make-route */
+.make-route__tools {
+  width: 278px;
+  background-color: #C9C1B2;
+}
+
+/* .make-route__map {
+  width: 922px;
+  height: 744px;
+} */
+
+.header__user-menu {
+  align-items: center;
+}
+
+.user-menu__img {
+  margin-right: 5px;
+}
