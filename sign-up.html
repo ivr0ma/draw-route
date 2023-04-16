@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вход</title>
+  <title>Регистрация</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -86,23 +86,17 @@
   </header>
 
   <main>
-    <section class="login">
-      <div class="container login__container flex">
-        <p class="login__descr">
-          Начни день вместе с&nbsp;Draw Route!
-        </p>
-        <form class="login__form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <section class="sign-up">
+      <div class="container sign-up__container flex">
+        <form class="sign-up__form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="form__title">
-            Вход
+            Регистрация
           </h2>
-          <div class="form__inputs flex">
-            <input class="form__input" type="email" name="email" placeholder="логин/почта" required>
-            <input class="form__input" type="password" name="password" placeholder="пароль" required>
-          </div>
-          <button class="btn btn-reset form__btn">Войти</button>
-          <span>
-            Нет аккаунта? <a class="form__sign-up" href="sign-up.html">Зарегистрироваться</a>
-          </span>
+          <input class="form__input" type="text" name="first-name" placeholder="имя" required>
+          <input class="form__input" type="text" name="second-name" placeholder="фамилия" required>
+          <input class="form__input" type="email" name="email" placeholder="почта" required>
+          <input class="form__input" type="password" name="password" placeholder="пароль" required>
+          <button class="btn btn-reset form__btn">Зарегистрироваться</button>
         </form>
       </div>
     </section>

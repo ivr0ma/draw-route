@@ -366,3 +366,22 @@ body {
 .form__btn {
   margin-bottom: 10px;
 }
+
+/* sign-up */
+.sign-up__container {
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.sign-up__form {
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  padding: 40px 30px;
+  outline: 1px solid coral;
+}
+
+.sign-up__form .form__btn {
+  margin-bottom: 0;
+}
