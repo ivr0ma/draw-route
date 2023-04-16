@@ -30,6 +30,13 @@ body {
   list-style: none;
 }
 
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
 }
@@ -46,6 +53,12 @@ body {
 
 .section-title {
   margin: 0;
+}
+
+.btn {
+  width: max-content;
+  padding: 10px 20px;
+  outline: 1px solid coral;
 }
 
 /* header */
@@ -308,4 +321,48 @@ body {
 
 .nav__subnav {
   flex-direction: column;
+}
+
+/* login */
+.login {
+  min-height: 600px;
+}
+
+.login__container {
+  align-items: center;
+  min-height: 600px;
+}
+
+.login__descr {
+  margin: 0;
+  margin-right: auto;
+}
+
+.login__form {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__inputs {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 350px;
+  height: 30px;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.form__btn {
+  margin-bottom: 10px;
 }
