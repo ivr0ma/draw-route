@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Route</title>
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body class="body">
+    <header class="header">
+    <div class="container header__container flex">
+        <a class="header__logo" href="#">
+        <img class="header__img" src="~/img/logo.png" alt="Draw Route">
+        </a>
+        <nav class="header__menu">
+        <ul class="menu__list list-reset flex">
+            <li class="menu__item">
+                <a class="menu__link" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+            </li>
+            <li class="menu__item menu__item_show">
+            <div class="menu__show flex" href="#">
+                <span class="menu__link menu__link_show">
+                О&nbsp;сервисе
+                </span>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="#E85A4F" stroke-width="2"/>
+                </svg>
+            </div>
+            <ul class="menu__submenu list-reset flex">
+                <li class="submenu__item">
+                    <a class="submenu__link" asp-area="" asp-controller="Home" asp-action="Instruction">Инструкция</a>
+                </li>
+                <li class="submenu__item">
+                    <a class="submenu__link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                </li>
+            </ul>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" asp-area="" asp-controller="Home" asp-action="Gallery">Галерея</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" asp-area="" asp-controller="Home" asp-action="Blog">Блог</a>
+            </li>
+            <li class="menu__item menu__item_show">
+            <div class="menu__show flex" href="#">
+                <span class="menu__link menu__link_show">
+                О&nbsp;нас
+                </span>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="#E85A4F" stroke-width="2"/>
+                </svg>
+            </div>
+            <ul class="menu__submenu list-reset flex">
+                <li class="submenu__item">
+                    <a class="submenu__link" asp-area="" asp-controller="Home" asp-action="Team">Команда</a>
+                </li>
+                <li class="submenu__item">
+                    <a class="submenu__link" asp-area="" asp-controller="Home" asp-action="Reviews">Отзывы</a>
+                </li>
+            </ul>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" asp-area="" asp-controller="Home" asp-action="Login">Вход</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody() @*Выдает страницу index из папки Home*@
+        </main>
+    </div>
+
+    <footer class="footer">
+    <div class="container footer__container flex">
+        <div class="footer__left">
+        <a class="footer__logo" href="#">
+            <img class="footer__img" src="~/img/logo.png" alt="Draw Route">
+        </a>
+        <p class="footer__descr">
+            &copy;&nbsp;2023 Draw Route. Все права защищены.
+        </p>
+        </div>
+        <nav class="footer__nav">
+        <ul class="nav__list list-reset flex">
+            <li class="nav__item flex">
+                <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+            </li>
+            <li class="nav__item flex">
+            <a class="nav__link" href="#">
+                О&nbsp;сервисе
+            </a>
+            <ul class="nav__subnav list-reset flex">
+                <li class="subnav__item">
+                    <a class="subnav__link" asp-area="" asp-controller="Home" asp-action="Instruction">Инструкция</a>
+                </li>
+                <li class="subnav__item">
+                    <a class="subnav__link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav__item flex">
+                <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Gallery">Галерея</a>
+            </li>
+            <li class="nav__item flex">
+                <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Blog">Блог</a>
+            </li>
+            <li class="nav__item flex">
+            <a class="nav__link" href="#">
+                О&nbsp;нас
+            </a>
+            <ul class="nav__subnav list-reset flex">
+                <li class="subnav__item">
+                    <a class="subnav__link" asp-area="" asp-controller="Home" asp-action="Team">Команда</a>
+                </li>
+                <li class="subnav__item">
+                    <a class="subnav__link" asp-area="" asp-controller="Home" asp-action="Reviews">Отзывы</a>
+                </li>
+            </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    </footer>
+@*  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)*@ @*хз это надо или нет*@
+</body>
+</html>
